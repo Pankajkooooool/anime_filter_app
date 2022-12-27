@@ -44,19 +44,6 @@ const Products = () => {
           ))}
         </div>
         <div className="filterItem">
-          <h2>Filter by price</h2>
-          <div className="inputItem">
-            <span>0</span>
-            <input
-              type="range"
-              min={1}
-              max={9000}
-              onChange={(e) => setMaxPrice(e.target.value)}
-            />
-            <span>{maxPrice}</span>
-          </div>
-        </div>
-        <div className="filterItem">
           <h2>Sort by</h2>
           <div className="inputItem">
             <input
@@ -79,6 +66,20 @@ const Products = () => {
             <label htmlFor="desc">Price (Highest first)</label>
           </div>
         </div>
+        <div className="filterItem">
+          <h2>Filter by price</h2>
+          <div className="inputItem">
+            <span>0</span>
+            <input
+              type="range"
+              min={1}
+              max={9000}
+              onChange={(e) => setMaxPrice(e.target.value)}
+            />
+            <span>{maxPrice}</span>
+          </div>
+        </div>
+        
       </div>
       <div className="right">
         <img

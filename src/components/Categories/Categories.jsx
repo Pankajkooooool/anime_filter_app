@@ -30,7 +30,7 @@ const Categories = () => {
         </div>
       </div>
       <div className="col">
-        <div className="row">
+        <div className="row scam">
           {" "}
           <img
             src="https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&w=1600"

@@ -34,5 +34,57 @@
       object-fit: cover;
       margin-bottom: 50px;
     }
+
   }
+}
+
+
+@media only screen and (max-width :600px){
+  .products {
+    padding: 30px 1px;
+    display: flex;
+    flex-direction: column;
+    .left {
+      padding: 0 25px;
+      flex: 1;
+      display:flex;
+      position: relative;
+      height: 60vh;
+      top: 0px;
+      gap:5px;
+      flex-wrap: wrap;
+  
+      .filterItem{
+        
+        margin-bottom: 0px;
+        
+        h2{
+          font-size: 15px;
+          font-weight: 400;
+          color: rgb(34, 109, 221);
+          margin-bottom: 5px;
+        }
+  
+        .inputItem{
+          margin-bottom: 5px;
+          label{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    
+    .right {
+      flex: 3;
+  
+      .catImg{
+        
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
 }

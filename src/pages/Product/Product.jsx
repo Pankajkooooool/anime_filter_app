@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./Product.scss";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import BalanceIcon from "@mui/icons-material/Balance";
+// import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+// import BalanceIcon from "@mui/icons-material/Balance";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -50,8 +50,8 @@ const Product = () => {
             </div>
           </div>
           <div className="right">
-            <h1>{data?.attributes?.title}</h1>
-            <span className="price">${data?.attributes?.price}</span>
+            <h2 className=" Pains">{data?.attributes?.title}  <span className="price">₹{data?.attributes?.price}</span></h2>
+            
             <p>{data?.attributes?.desc}</p>
             <div className="quantity">
               <button
@@ -82,21 +82,37 @@ const Product = () => {
               <AddShoppingCartIcon /> ADD TO CART
             </button>
             <div className="links">
-              <div className="item">
+              {/* <div className="item">
                 <FavoriteBorderIcon /> ADD TO WISH LIST
-              </div>
+              </div> */}
               {/* <div className="item">
                 <BalanceIcon /> ADD TO COMPARE
               </div> */}
             </div>
             <div className="info">
               <span>Vendor: Anime Filter</span>
-              <span>Product Type:{data?.attributes?.category}</span>
+              <span>Product Type:  {data?.attributes?.type}</span>
             </div>
             <hr />
             <div className="info">
               <span>DESCRIPTION</span>
               
+    Made of 100% combed cotton with a wrinkle-free and smooth finish. <br />
+    320 GSM of fabric weight, which will last long enough to make you forget the year of purchase <br />
+    100% Bio-washed cotton with a soft fabric feel.<br />
+    Non-zipped with convenient kangaroo pockets. <br />
+    Unisex hoodie pattern with a regular fit<br />
+    Side-seamed <br />
+
+    <span>Washing Guidelines:</span> <br />
+  
+
+    Do not IRON directly on the print. <br />
+    Always turn your garment INSIDE OUT before washing & drying to prevent fading.<br />
+    Hand/Machine wash with similar clothes in COLD water.<br />
+    Do Not Wring (Squeeze and twist the clothing).<br />
+    Dry on a flat surface as hanging may cause measurement variations.<br />
+
 
 
               <hr />
