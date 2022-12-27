@@ -16,26 +16,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="wrapper">
-        <div className="left">
-          <div className="item">
-            {/* <img src="/img/en.png" alt="" /> */}
-            {/* <KeyboardArrowDownIcon /> */}
-          </div>
-          <div className="item">
-          <Link className ="link" to="/">Home</Link>
-            
-            {/* <KeyboardArrowDownIcon /> */}
-          </div>
-          <div className="item">
-            {/* <Link className ="link" to="/products/1">Women</Link> */}
-          </div>
-          <div className="item">
-            {/* <Link className ="link" to="/products/2">Men</Link> */}
-          </div>
-          <div className="item">
-            {/* <Link className ="link" to="/products/3">Children</Link> */}
-          </div>
-        </div>
+        
         <div className="center">
         <Link className ="link" to="/">Anime Filter</Link>
         </div>
@@ -49,9 +30,7 @@ const Navbar = () => {
           <div className="item">
             <Link className ="link" to="/">Contact</Link>
           </div>
-          <div className="item">
-            {/* <Link className ="link" to="/">Stores</Link> */}
-          </div>
+       
           <div className="icons">
             {/* <SearchIcon/> */}
             {/* <PersonOutlineOutlinedIcon/> */}

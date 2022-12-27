@@ -1,5 +1,5 @@
 .featuredProducts {
-  margin: 100px 200px;
+  margin: 50px 100px;
 
   .top {
     display: flex;
@@ -24,3 +24,45 @@
     gap: 50px;
   }
 }
+
+@media only screen and (max-width :600px){
+
+  .featuredProducts {
+    margin: 0px;
+    margin-top: 30px !important ;
+  display: flex;
+  flex-direction: column;
+
+    .top {
+      margin: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+  
+      h1 {
+        
+        text-transform: capitalize;
+      }
+  
+      p{
+        flex:3;
+        padding: 5px;
+        color:gray
+      }
+    }
+  
+    .bottom{
+      margin: 5px;
+      display: flex;
+      // flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+     gap: 0;
+      overflow: scroll;
+    }
+  }
+
+}
+
+
+

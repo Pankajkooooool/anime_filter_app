@@ -1,26 +1,61 @@
-.featuredProducts {
-  margin: 100px 200px;
+// .featuredProducts {
+//   margin: 50px 100px;
 
-  .top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
+//   .top {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-bottom: 50px;
 
-    h1 {
-      flex: 2;
-      text-transform: capitalize;
-    }
+//     h1 {
+//       flex: 2;
+//       text-transform: capitalize;
+//     }
 
-    p{
-      flex:3;
-      color:gray
-    }
-  }
+//     p{
+//       flex:3;
+//       color:gray
+//     }
+//   }
 
-  .bottom{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-  }
-}
+//   .bottom{
+//     display: flex;
+//     justify-content: center;
+//     gap: 50px;
+//   }
+// }
+
+// @media only screen and (max-width :600px){
+
+//   .featuredProducts {
+//     margin-top: 30px !important ;
+//   display: flex;
+//   flex-direction: column;
+
+//     .top {
+//       display: flex;
+//       flex-direction: column;
+//       margin-bottom: 10px;
+  
+//       h1 {
+//         flex: 2;
+//         text-transform: capitalize;
+//       }
+  
+//       p{
+//         flex:3;
+//         color:gray
+//       }
+//     }
+  
+//     .bottom{
+//       display: flex;
+//       justify-content: center;
+//       gap: 50px;
+//     }
+//   }
+
+// }
+
+
+

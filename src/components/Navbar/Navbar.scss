@@ -1,5 +1,7 @@
+
 .navbar {
   height: 80px;
+  
 
   .wrapper {
     padding: 10px 30px;
@@ -11,13 +13,10 @@
       display: flex;
       align-items: center;
       font-size: 18px;
+
     }
 
-    .left {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-    }
+    
     .center {
       font-size: 30px;
       letter-spacing: 2px;
@@ -25,17 +24,18 @@
     .right {
       display: flex;
       align-items: center;
-      gap: 25px;
+      
 
       .icons {
         display: flex;
         gap: 15px;
         color: #777;
+        padding-left: 5px;
         cursor: pointer;
 
         .cartIcon {
           position: relative;
-
+          
           span {
             font-size: 12px;
             width: 20px;
@@ -54,4 +54,31 @@
       }
     }
   }
+}
+
+
+@media only screen and (max-width :600px){
+
+  .navbar{
+    height: 10vh;
+    max-width: 100%;
+
+    .wrapper{
+      align-items: center;
+      padding: 25px;
+      
+      .item{
+        font-size: small;
+      
+      }
+      .center{
+        font-size: large;
+        align-self: center;
+      }
+     
+
+    }
+  }
+
+ 
 }
