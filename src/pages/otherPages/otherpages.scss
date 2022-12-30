@@ -1,0 +1,27 @@
+.main-section{
+    width: 95%;
+    margin: auto;
+    .headingtext{
+        margin: 20px;
+        color: #2879fe;
+        font-weight: bold;
+        font-size: 30px;
+       
+        text-align: center;
+    }
+    p{
+        padding: 20px;
+        font-size: 14px;
+        
+        .center{
+            align-items: center;
+        }
+    }
+    .headingtext2{
+        text-align: center;
+        margin: 20px;
+        color: #2879fe;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}

@@ -87,6 +87,7 @@ const Products = () => {
           src="https://i.imgur.com/DkdtetU.png"
           alt=""
         />
+        {!selectedSubCats && "No Items exists" }
         <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats}/>
       </div>
     </div>

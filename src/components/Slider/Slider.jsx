@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import "./Slider.scss";
@@ -8,9 +8,9 @@ const Slider = () => {
 
   const data = [
    
-    "https://i.imgur.com/DkdtetU.png",
-    "https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://i.imgur.com/H02AwQX.jpg",
+    "https://i.imgur.com/fNA6cd9.jpg",
+    "https://i.imgur.com/U0EY1Id.jpg",
   ];
 
   const prevSlide = () => {
@@ -18,12 +18,22 @@ const Slider = () => {
   };
   const nextSlide = () => {
     setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
+
   };
+
+  useEffect(() => {
+    nextSlide();
+    }, []);
+
+  setTimeout(() => {
+    nextSlide();
+    }, 60000);
 
   return (
     <div className="slider">
       <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
         <img src={data[0]} alt="" />
+        {/* <img src="../../../public/img/1672420183492.png" alt="" /> */}
         <img src={data[1]} alt="" />
         <img src={data[2]} alt="" />
         {/* <img src={data[3]} alt="" /> ₹ */  }

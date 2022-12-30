@@ -1,6 +1,9 @@
 
 .navbar {
-  height: 80px;
+ 
+  color: white;
+  background-color: #2563eb;
+  
   
 
   .wrapper {
@@ -20,6 +23,12 @@
     .center {
       font-size: 30px;
       letter-spacing: 2px;
+     
+        img{
+          height:  90%;
+          color: white;
+        }
+      
     }
     .right {
       display: flex;
@@ -29,7 +38,7 @@
       .icons {
         display: flex;
         gap: 15px;
-        color: #777;
+        color: white;
         padding-left: 5px;
         cursor: pointer;
 
@@ -41,7 +50,7 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: #2879fe;
+            background-color: #60a5fa;
             color: white;
             position: absolute;
             right: -10px;
