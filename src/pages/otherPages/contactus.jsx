@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import "./otherpages.scss";
 
 const contactus = () => {
   return (
-    <div>Call me when you want
-      I pick when I want
+    <div className='main-section'>
+      
+     
+    <div className="headingtext">Need Help? Do not worry</div>
+
     </div>
   )
 }

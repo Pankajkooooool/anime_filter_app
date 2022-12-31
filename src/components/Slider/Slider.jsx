@@ -9,8 +9,8 @@ const Slider = () => {
   const data = [
    
     "https://i.imgur.com/H02AwQX.jpg",
-    "https://i.imgur.com/fNA6cd9.jpg",
     "https://i.imgur.com/U0EY1Id.jpg",
+    "https://i.imgur.com/fNA6cd9.jpg",
   ];
 
   const prevSlide = () => {
@@ -18,18 +18,19 @@ const Slider = () => {
   };
   const nextSlide = () => {
     setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
-
+   
   };
 
   useEffect(() => {
+   setInterval(() => {
     nextSlide();
-    }, []);
+   }, 25000);
+    }, [currentSlide]);
 
-  setTimeout(() => {
-    nextSlide();
-    }, 60000);
+
 
   return (
+    <div className="section">
     <div className="slider">
       <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
         <img src={data[0]} alt="" />
@@ -47,6 +48,7 @@ const Slider = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 

@@ -21,7 +21,7 @@ const Contact = () => {
           <a className='link' href="https://facebook.com/"><FacebookIcon /></a>
           <a className='link' href="https://instagram.com/animefilter_"><InstagramIcon /></a>
           <a className='link' href="https://twitter.com/animefilter_"><TwitterIcon /></a>
-          <a className='link'  href="https://whatsapp.com/"><WhatsappIcon /></a>
+          <a className='link'  href="https://wa.me/918197515806"><WhatsappIcon /></a>
         
         </div>
       </div>

@@ -1,3 +1,7 @@
+.section{
+  width: 100vw;
+  overflow: hidden;
+}
 .slider{
   // height: calc(100vh - 80px);
   height:auto;
@@ -29,6 +33,7 @@
     margin: auto;
 
     .icon{
+      color: rgb(2, 31, 87);
       width: 50px;
       height: 50px;
       border: 1px solid #999;
@@ -46,7 +51,7 @@
   .slider{
     // height: calc(100vh - 80px);
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     overflow: hidden;
   

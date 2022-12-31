@@ -22,14 +22,12 @@ const Navbar = () => {
         <Link className ="link" to="/">Anime Filter</Link>
         </div>
         <div className="right">
+          {/* <div className="item">
+            <Link className ="link" to="/">Home</Link>
+          </div> */}
+         
           <div className="item">
-            {/* <Link className ="link" to="/">Home</Link> */}
-          </div>
-          <div className="item">
-            {/* <Link className ="link" to="/">About</Link> */}
-          </div>
-          <div className="item">
-            <Link className ="link" to="/">Contact  </Link>
+            <Link className ="link" to="/contactus">Contact  </Link>
           </div>
        
           <div className="icons">

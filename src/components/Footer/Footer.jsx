@@ -3,6 +3,7 @@ import "./Footer.scss";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
+    <div className="section">
     <div className="footer">
       <div className="top">
         <div className="item">
@@ -24,7 +25,7 @@ const Footer = () => {
        
       </div>
       <div className="bottom">
-        <div className="left center">
+        <div id="bottom-flex" className="left center">
           <span className="logo">Anime Filter</span>
           <span className="copyright">
             © Copyright 2023. All Rights Reserved
@@ -35,6 +36,7 @@ const Footer = () => {
         </div> */}
       </div>
     </div>
+  </div>
   );
 };
 
